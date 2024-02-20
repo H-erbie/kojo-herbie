@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@netlify/plugin-nextjs": "^4.41.3",
     "@plaiceholder/next": "^3.0.0",
     "lucide-react": "^0.303.0",
     "next": "14.0.4",
