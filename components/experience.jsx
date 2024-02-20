@@ -1,8 +1,11 @@
+'use client'
+
 import React from "react";
 import { MdWork } from "react-icons/md";
 import { FaGlasses } from "react-icons/fa";
 
 const Experience = () => {
+
   const exper_iences = [
     {
       company: "millennium tech hub",
@@ -25,6 +28,7 @@ const Experience = () => {
       tasks: [
         `Developed the product detail pages and shopping cart functionality for an e-commerce website, allowing users to directly connect with the client via WhatsApp.`,
         `Researched and shortlisted 5 potential UI tools, with my recommendation ultimately chosen for its improved user experience.`,
+      'Utilized ReactJS, NextJs, and Firebase for fron-tend development'
       ],
     },
   ];
@@ -33,8 +37,8 @@ const Experience = () => {
       id="experience"
       className="flex items-center justify-center  flex-col gap-y-3"
     >
-      <h2 className="w-max flex items-center mx-auto text-3xl  font-bold mb-4">
-        Experience <MdWork className="text-green-400" />
+      <h2 className="w-max flex gap-2 items-center mx-auto text-3xl  font-bold mb-4">
+        Experience <MdWork className="text-green-400 rotate-[-30deg]" />
       </h2>
       <div className="sm:w-[85%] px-4 w-full lg:w-3/4 flex gap-5 flex-col">
         {exper_iences.map((experience, index) => (
@@ -46,7 +50,7 @@ const Experience = () => {
               <FaGlasses className="text-green-400 text-xl" /></div>
             </div>
             <div className="flex capitalize gap-x-4 my-2 text-gray-400">
-              <p className="w-max">{experience.from}</p>
+              <p className="w-max">{experience.from}</p> -
               <p className="w-max">{experience.to}</p>
             </div>
             <ul className="flex flex-col gap-y-4">

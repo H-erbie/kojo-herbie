@@ -1,40 +1,33 @@
-'use client'
-import React from 'react'
-import { ThemeToggle } from './themeToggle'
-import Image from 'next/image'
-import darkLogo from '@/public/logoDark.png'
-import lightLogo from '@/public/logoLight.png'
-import { RiHome2Fill, RiUserFill } from "react-icons/ri";
-import { MdWork } from "react-icons/md";
-import { BsStack, BsLaptopFill } from "react-icons/bs";
-import { IoMdMail } from "react-icons/io";
+"use client";
+import React from "react";
+import { ThemeToggle } from "./themeToggle";
+import darkLogo from "@/public/logoLight.png";
+import lightLogo from "@/public/lightsOn.png";
+import Image from "next/image";
+import Link from "next/link";
+
 const TopNav = () => {
-
-  
-
-  const navIcons = [
-    {icon: <RiHome2Fill/>, url: '#home'},
-    {icon: <RiUserFill/>, url: '#about'},
-    {icon: <MdWork/>, url: '#experience'},
-    {icon: <BsStack/>, url: '#skills'},
-    {icon: <BsLaptopFill/>, url: '#projects'},
-    {icon: <IoMdMail/>, url: '#contact'},
-  ]
   return (
-    <nav className="w-screen overflow-hidden  z-50  flex  justify-center  items-center fixed bottom-0 left-0 sm:px-3 sm:py-4">
-<div className='justify-evenly sm:justify-between  w-full sm:w-max sm:gap-x-4  sm:rounded-[2rem] py-3 px-3 flex items-center backdrop-brightness-[0.7] backdrop-blur-lg'>
-  
+    <div className=" py-3 px-2 fixed top-0 left-0 sm:right-0 z-[60] flex justify-between  items-center  w-screen">
+      <Link href="#" className="hover:opacity-50 bg-white dark:bg-[#181B1F] sm:bg-transparent rounded-[100%]  py-4 px-1 relative">
+        <Image
+          src={lightLogo}
+          alt="profile"
+          width={80}
+          height={80}
+          className=" w-full absolute rotate-0 scale-100 transition-all dark:rotate-90 dark:scale-0  "
+        />
+         <Image
+          src={darkLogo}
+          alt="profile"
+          width={80}
+          height={80}
+          className=" w-full  rotate-90 scale-0 transition-all dark:-rotate-0 dark:scale-100 "
+        />
+      </Link>
+        <ThemeToggle />
+    </div>
+  );
+};
 
-{/* <div className="flex gap-y-6 items-center"> */}
-{
-  navIcons.map((icon, index) => (
-    <a href={icon.url} key={index} className='link px-3 py-3 rounded-[100%] text-2xl sm:text-3xl transition-all  dark:hover:bg-[#181B1F] hover:bg-white bg-background'>{icon.icon}</a>
-  ))
-}</div>
-{/* </div> */}
-
-    </nav>
-  )
-}
-
-export default TopNav
+export default TopNav;

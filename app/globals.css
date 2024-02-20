@@ -28,9 +28,17 @@ body {
     )
     rgb(var(--background-start-rgb)); */
 }
+input, textarea{
+  
+  @apply px-3 py-2 focus:outline-green-400 rounded-lg dark:bg-[#3f434a]  bg-gray-300 
+}
 
 @layer base{
   section{
-    @apply min-h-screen my-5
+    /* display: ; */
+    @apply min-h-screen my-5 pt-20 sm:pt-0
   }
+ .bottomNavLinks{
+  @apply  px-3 py-3 dark:text-white rounded-[100%] text-gray-700 text-2xl sm:text-3xl transition-all
+ }
 }
