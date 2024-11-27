@@ -10,6 +10,7 @@ import { BsStack, BsLaptopFill } from "react-icons/bs";
 import { IoMdMail } from "react-icons/io";
 import useActiveLink from './useActiveLink';
 
+
 const BottomNav = () => {
   const [activeSection, setActiveSection] = useState('home');
   const observer = useRef(null);
@@ -49,8 +50,8 @@ const BottomNav = () => {
   ]
 
   return (
-    <nav className="w-screen overflow-hidden  z-40  flex  justify-center  items-center fixed bottom-0 left-0 px-3 py-4">
-    <div className='justify-evenly sm:justify-between  w-full sm:w-max sm:gap-x-4  rounded-[2rem] py-3 px-3 flex items-center backdrop-brightness-[0.7] backdrop-blur-lg'>
+    <nav className="lg:w-1/2 md:left-[20% ] lg:left-[25%] sm:w-[70%] sm:left-[15%] md:w-[60%]  w-full sm:rounded-[2rem] dark:backdrop-brightness-[0.7] backdrop-brightness-[0.9] backdrop-blur-lg z-40  flex   fixed bottom-0 left-0 ">
+    <div className='justify-evenly sm:justify-between  w-full  sm:gap-x-4    flex items-center '>
       {navIcons.map((icon, index) => {
         const linkName = icon.url.split('#')
         return <a
@@ -61,6 +62,7 @@ const BottomNav = () => {
           {icon.icon}
         </a>
       })}
+      <ThemeToggle/>
     </div>
   </nav>
   )

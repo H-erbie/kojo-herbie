@@ -8,9 +8,10 @@ import { FaQuoteLeft, FaUser,  FaQuoteRight } from "react-icons/fa";
 const About = () => {
 
   const ethics = [
-    'hardwork',
-    'persistence',
-    'team player'
+    '💻',
+    '🤖',
+    '🎮',
+    '🛠'
   ]
 
   return (
@@ -33,17 +34,18 @@ const About = () => {
         <div className="sm:w-[60%] w-[80%] lg:w-[50%]">
           <div className="absolute inset-x-0 m-auto h-52   max-w-lg bg-gradient-to-tr dark:from-green-400 from-green-600 dark:via-teal-900 via-teal-300 dark:to-slate-200 to-slate-500 blur-[118px]"></div>
           {/* <p className=""><span><FaQuoteLeft/></span> A project of thousands of lines of codes begins with a a press on the keyboard <span><FaQuoteRight/></span> </p> */}
-         <div className="flex mx-auto flex-wrap w-max sm:w-full lg:w-max gap-y-3 gap-x-2">
+         <div className="flex mx-auto flex-wrap w-max sm:w-full lg:w-3/4 gap-y-3 gap-x-6">
          {
           ethics.map((ethic, index)=>(
-            <div key={index} className="py-2 px-3 hover:bg-green-600 cursor-pointer bg-green-400 rounded-md relative"><div className="absolute h-2 w-2 bg-green-700 animate-ping rounded-[100%] top-2 right-2"></div><p className="text-xl capitalize flex  gap-x-2 font-semibold text-white "><FaUser/><span className="hidden text-black dark:text-white sm:block">{ethic}</span></p></div>
+            <div key={index} className="p-3 hover:bg-green-600 cursor-pointer bg-green-400 rounded-[100%] relative"><p className="text-3xl capitalize flex  gap-x-2 font-semibold text-white "><span className="hidden text-black dark:text-white sm:block">{ethic}</span></p></div>
           ))
          }
          </div>
           <p className="lg:w-3/4 mx-auto lg:text-start text-center mt-6 font-medium text-lg">
-            I am a self-taught full-stack developer and a junior at the
-            University of Energy and Natural Resources, majoring in computer
-            science
+            I am a self-taught full-stack developer with 2+ years of industry experience.
+            I also pursued a degree in Computer Science at the University of Energy and Natural Resources.
+            I am passionate about building robust, scalable, and user-friendly applications.
+            Beyond Software Engineering, I am also into Mechatronics, Game design/dev, Cyber Security and 2D/3D animation.
           </p>
         </div>
       </div>

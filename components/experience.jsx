@@ -7,16 +7,42 @@ import { FaGlasses } from "react-icons/fa";
 const Experience = () => {
 
   const exper_iences = [
+    
+    {
+      company: "Freelance & Volunteer",
+      location: "remote",
+      role: "Full Stack developer",
+      from: "august 2023",
+      to: "present",
+      tasks: [
+`Developed and maintained 5+ full-stack applications, increasing user engagement by 20% for Client A.`,
+`Migrated a legacy codebase to Next.js, improving performance by 30% and reducing maintenance costs.`,
+`Collaborated with cross-functional teams to deliver high-quality solutions`      ],
+    },
+    
+    {
+      company: "monza careers",
+      location: "remote",
+      role: "Full Stack developer",
+      from: "june 2024",
+      to: "october 2024",
+      tasks: [
+`Enhanced website builder user productivity by 60% through optimized performance and intuitive UI`,
+`Implemented interactive elements to improve user engagement.`,
+`Leveraged React.js, Tailwind CSS, Next.js, TypeScript, Node.js, Express.js, MongoDB, and Figma to build scalable and performant web applications`        
+      ],
+    },
     {
       company: "millennium tech hub",
       location: "remote",
-      role: "web developer",
+      role: "Full stack developer",
       from: "september 2023",
       to: "december 2023",
       tasks: [
-        `Developed 4 user-facing web applications, including a cleaning service website with 15% user growth within 3 months, an e-commerce baby product site with 200 active users daily, and a real estate property listing platform`,
-        `Designed the UI for 3 websites, resulting in a 10% increase in conversion rates for the e-commerce platform.`,
-        "Utilized ReactJS, NodeJS, and MongoDB for full-stack development.",
+        `Developed and launched 3 full-stack web applications, including a cleaning service website, e-commerce baby product site, and real estate property listing platform.`,
+        `Designed user-friendly UI for all 3 platforms, increasing conversion rates by 10% for the e-commerce site.`,
+        `Utilized HTML, CSS, JavaScript, Sass, React.js, Tailwind CSS, Node.js, Express.js, MongoDB, and Figma to build robust and scalable applications.`,
+        
       ],
     },
     {
@@ -26,9 +52,8 @@ const Experience = () => {
       from: "june 2023",
       to: "september 2023",
       tasks: [
-        `Developed the product detail pages and shopping cart functionality for an e-commerce website, allowing users to directly connect with the client via WhatsApp.`,
-        `Researched and shortlisted 5 potential UI tools, with my recommendation ultimately chosen for its improved user experience.`,
-      'Utilized ReactJS, NextJs, and Firebase for fron-tend development'
+        `Developed product detail pages and shopping cart functionality for an e-commerce website, facilitating direct user-to-client communication via WhatsApp.`,
+        `Employed React.js, Next.js, Node.js, Express.js, and Firebase to build a seamless user experience.`
       ],
     },
   ];
